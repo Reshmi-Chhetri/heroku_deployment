@@ -8,11 +8,11 @@ app = Flask(__name__)
 
 model = joblib.load('diabetes.pkl')
 
-@app.route('/')
-def welcome():
-    return render_template('welcome.html')
+#@app.route('/')
+#def welcome():
+ #   return render_template('welcome.html')
 
-@app.route('/home')
+@app.route('/')
 def home_page():
     return render_template('home.html')
 
